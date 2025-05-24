@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-main {
+body {
+  margin:0;
+}
+.layout-container {
   padding: 0 100px;
 
   @media (max-width: 768px) {
