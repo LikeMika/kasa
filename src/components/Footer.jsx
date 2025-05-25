@@ -1,4 +1,4 @@
-import logoFooter from '../assets/img/logo-footer.png'; // adapte le chemin selon ton arborescence
+import logoFooter from '../assets/img/logo-footer.png';
 import '../styles/Footer.scss'; 
 
 function Footer() {
