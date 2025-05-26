@@ -1,0 +1,25 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+
+  .about-content {
+    margin-top: 43px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Version mobile */
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 0 20px;
+
+    .about-content {
+      margin-top: 20px;
+    }
+  }
+}
