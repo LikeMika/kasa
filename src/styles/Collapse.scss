@@ -35,3 +35,17 @@
   from { opacity: 0; max-height: 0; }
   to { opacity: 1; max-height: 500px; }
 }
+
+@media screen and (max-width: 768px) {
+  .collapse {
+    margin-bottom: 20px;
+    .collapse-header {
+    height: 30px;
+    font-size: 18px;
+  }
+   .collapse-content {
+    font-size: 12px;
+  }
+  }
+    
+}
