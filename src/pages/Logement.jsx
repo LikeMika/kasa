@@ -1,5 +1,5 @@
-function Housing() {
+function Logement() {
   return <h1>Page du logement</h1>;
 }
 
-export default Housing;
+export default Logement;

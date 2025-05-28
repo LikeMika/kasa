@@ -1,0 +1,41 @@
+.error {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 139px;
+    &__four {
+        font-size: 288px;
+        color:#FF6060;
+        font-weight: bold;
+        height: 263px;
+    }
+    &__oups {
+        font-size: 36px;
+        color:#FF6060;
+        margin: 0;
+    }
+    a {
+        font-size:18px;
+        margin-bottom: 139px;
+        color: black;
+    }
+}
+
+    @media (max-width: 768px) {
+      .error {
+    margin-top: 113px;
+    gap: 113px;
+    &__four {
+        font-size: 96px;
+        height: 99px;
+    }
+    &__oups {
+        font-size: 18px;
+    }
+    a {
+        font-size:14px;
+        margin-bottom: 113px;
+    }
+}
+    }
