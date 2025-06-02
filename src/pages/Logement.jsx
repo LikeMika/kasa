@@ -2,6 +2,7 @@ import { useParams, Navigate } from 'react-router-dom';
 import Carousel from '../components/Carousel';
 import Tags from '../components/Tags';
 import Rating from '../components/Rating';
+import Collapse from '../components/Collapse';
 import logements from '../assets/data/logements.json';
 import '../styles/Logement.scss';
 
@@ -32,6 +33,19 @@ function Logement() {
                 </div>
             </div>
             <Rating rating={logement.rating} />
+        </div>
+        <div className='description'>
+            <Collapse title="Description" className="collapse-logement" >
+                {logement.description}
+            </Collapse>
+            <Collapse title="Equipement" className="collapse-logement" >
+                <ul className="equipments-list">
+                    {logement.equipments.map((item, index) => (
+                    <li key={index}>{item}</li>
+                    ))}
+                </ul>
+            </Collapse>
+
         </div>
       </div>
     </div>
