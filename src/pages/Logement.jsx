@@ -1,6 +1,7 @@
 import { useParams, Navigate } from 'react-router-dom';
 import Carousel from '../components/Carousel';
 import Tags from '../components/Tags';
+import Rating from '../components/Rating';
 import logements from '../assets/data/logements.json';
 import '../styles/Logement.scss';
 
@@ -30,6 +31,7 @@ function Logement() {
                      <img src={logement.host.picture} alt={logement.host.name} />
                 </div>
             </div>
+            <Rating rating={logement.rating} />
         </div>
       </div>
     </div>
