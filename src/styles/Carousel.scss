@@ -1,3 +1,5 @@
+@import '../styles/variables';
+
 .carousel {
   position: relative;
   width: 100%;
@@ -17,7 +19,7 @@
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: white;
+    color: $text-light;
     cursor: pointer;
     z-index: 1;
 
@@ -28,8 +30,9 @@
     &.right {
       right: 20px;
     }
+
     .chevron {
-        font-size: 79px;
+      font-size: 79px;
     }
   }
 
@@ -38,29 +41,32 @@
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: $text-light;
     font-size: 18px;
     font-weight: 500;
     padding: 5px 10px;
+    font-family: $font-family;
   }
-
 
   @media (max-width: 768px) {
-  height: 225px;
-  .carousel-button {
-    &.left {
-      left: 5px;
+    height: 225px;
+
+    .carousel-button {
+      &.left {
+        left: 5px;
+      }
+
+      &.right {
+        right: 5px;
+      }
+
+      .chevron {
+        font-size: $font-size-title;
+      }
     }
 
-    &.right {
-      right: 5px;
-    }
-    .chevron {
-        font-size: 24px;
-    }
-  }
     .carousel-counter {
-    display: none;
+      display: none;
+    }
   }
-}
 }

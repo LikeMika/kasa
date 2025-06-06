@@ -1,3 +1,5 @@
+@import '../styles/variables';
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -6,10 +8,11 @@
 }
 
 .tag {
-  background-color: #FF6060;
-  color: white;
+  background-color: $primary-color;
+  color: $text-light;
   padding: 5px 15px;
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
+  font-family: $font-family;
 }

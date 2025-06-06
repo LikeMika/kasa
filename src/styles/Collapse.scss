@@ -1,18 +1,21 @@
+@import '../styles/variables';
+
 .collapse {
   width: 100%;
   max-width: 1023px;
   margin-bottom: 38px;
 
   .collapse-header {
-    background-color: #FF6060;
+    background-color: $primary-color;
     height: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px 10px 15px;
-    color: white;
-    font-size: 24px;
+    color: $text-light;
+    font-size: $font-size-title;
     font-weight: 500;
+    font-family: $font-family;
     border-radius: 5px;
     cursor: pointer;
 
@@ -25,27 +28,35 @@
     background-color: #F6F6F6;
     padding: 20px;
     font-size: 18px;
-    color: black;
+    color: $background-dark;
+    font-family: $font-family;
     border-radius: 0 0 5px 5px;
     animation: fadeIn 0.3s ease-in-out;
   }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; max-height: 0; }
-  to { opacity: 1; max-height: 500px; }
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .collapse {
     margin-bottom: 20px;
+
     .collapse-header {
-    height: 30px;
-    font-size: 18px;
+      height: 30px;
+      font-size: $font-size-base;
+    }
+
+    .collapse-content {
+      font-size: $font-size-small;
+    }
   }
-   .collapse-content {
-    font-size: 12px;
-  }
-  }
-    
 }

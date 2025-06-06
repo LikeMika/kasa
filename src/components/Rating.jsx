@@ -7,7 +7,7 @@ function Rating({ rating }) {
 
   return (
     <div className="rating">
-      {[...Array(totalStars)].map((_, index) => (
+      {[...Array(totalStars)].map((_, index) => ( // array fill undefined
         <FaStar
           key={index}
           className="star"

@@ -4,7 +4,7 @@ import Collapse from '../components/Collapse';
 import aboutData from '../assets/data/about.json';
 import '../styles/About.scss';
 
-function About() {
+function About() { // Ajouter Index dans json about
   return (
     <div className="about">
       <Banniere image={bannerAbout} noOverlay />

@@ -1,5 +1,7 @@
+@import '../styles/variables';
+
 .header {
-  background-color: white;
+  background-color: $text-light;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,36 +16,33 @@
     gap: 50px;
 
     a {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 24px;
+      font-family: $font-family;
+      font-size: $font-size-title;
       font-weight: 500;
-      color: black;
+      color: $background-dark;
       text-decoration: none;
 
-      &:hover {
-        text-decoration: underline;
-      }
-
+      &:hover,
       &.active {
         text-decoration: underline;
       }
     }
   }
 
- @media (max-width: 768px) {
-  padding: 20px;
+  @media (max-width: 768px) {
+    padding: 20px;
 
-  &__nav {
-    gap: 20px;
+    &__nav {
+      gap: 20px;
 
-    a {
-      font-size: 12px;
-      text-transform: uppercase;
+      a {
+        font-size: $font-size-small;
+        text-transform: uppercase;
+      }
+    }
+
+    &__logo {
+      height: 48px;
     }
   }
-
-  &__logo {
-    height: 48px;
-  }
-}
 }

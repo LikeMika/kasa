@@ -1,14 +1,16 @@
+@import '../styles/variables';
+
 .card {
   width: 340px;
   height: 340px;
   border-radius: 10px;
-  background: linear-gradient(to top, #ff6060, #000000);
+  background: linear-gradient(to top, $primary-color, $background-dark);
   background-size: cover;
   background-position: center;
   position: relative;
   overflow: hidden;
   text-decoration: none;
-  color: white;
+  color: $text-light;
   display: flex;
   align-items: flex-end;
 

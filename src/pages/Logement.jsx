@@ -39,11 +39,11 @@ function Logement() {
                 {logement.description}
             </Collapse>
             <Collapse title="Equipement" className="collapse-logement" >
-                <ul className="equipments-list">
+                <div className="equipments-list">
                     {logement.equipments.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <span key={index}>{item}<br /></span>
                     ))}
-                </ul>
+                </div>
             </Collapse>
 
         </div>

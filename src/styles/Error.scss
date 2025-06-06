@@ -1,41 +1,53 @@
+@import '../styles/variables';
+
 .error {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    gap: 139px;
-    &__four {
-        font-size: 288px;
-        color:#FF6060;
-        font-weight: bold;
-        height: 263px;
-    }
-    &__oups {
-        font-size: 36px;
-        color:#FF6060;
-        margin: 0;
-    }
-    a {
-        font-size:18px;
-        margin-bottom: 139px;
-        color: black;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 139px;
+
+  &__four {
+    font-size: 288px;
+    color: $primary-color;
+    font-weight: bold;
+    font-family: $font-family;
+    height: 263px;
+  }
+
+  &__oups {
+    font-size: 36px;
+    color: $primary-color;
+    margin: 0;
+    font-family: $font-family;
+  }
+
+  a {
+    font-size: $font-size-base;
+    margin-bottom: 139px;
+    color: $background-dark;
+    text-decoration: underline;
+    font-family: $font-family;
+  }
 }
 
-    @media (max-width: 768px) {
-      .error {
+@media (max-width: 768px) {
+  .error {
     margin-top: 113px;
     gap: 113px;
+
     &__four {
-        font-size: 96px;
-        height: 99px;
+      font-size: 96px;
+      height: 99px;
     }
+
     &__oups {
-        font-size: 18px;
+      font-size: $font-size-base;
     }
+
     a {
-        font-size:14px;
-        margin-bottom: 113px;
+      font-size: $font-size-small;
+      margin-bottom: 113px;
     }
+  }
 }
-    }
